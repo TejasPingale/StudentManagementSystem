@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import net.guides.sms.entity.Student;
 import net.guides.sms.service.StudentService;
@@ -20,6 +21,11 @@ public class StudentController {
 	public StudentController(StudentService studentService) {
 		super();
 		this.studentService = studentService;
+	}
+	
+	@GetMapping
+	public String moreStudent(Model mod) {
+		return null;
 	}
 	
 	//handler method  to return list student and return model and view
