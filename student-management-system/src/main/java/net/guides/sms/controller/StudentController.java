@@ -25,8 +25,10 @@ public class StudentController {
 	
 	@GetMapping
 	public String moreStudent(Model mod) {
-		return null;
+		return "Hi nik";
 	}
+
+	
 	
 	//handler method  to return list student and return model and view
 	@GetMapping("/students")
