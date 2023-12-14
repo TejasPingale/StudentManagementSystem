@@ -12,6 +12,7 @@ import net.guides.sms.entity.Student;
 import net.guides.sms.service.StudentService;
 
 @Controller
+	@RequestMapping
 public class StudentController {
 
 	private StudentService studentService;
